@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e2f31;
+    color: rgb(194, 62, 62);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+.stopwatch {
+    text-align: center;
+}
+
+#time {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+button {
+    background-color: #61dafb;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}

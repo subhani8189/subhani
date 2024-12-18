@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Fitness Club</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to Your Fitness Journey</h2>
+            <p>Transform your body, mind, and life with us.</p>
+            <button onclick="scrollToSection('services')">Get Started</button>
+        </div>
+    </section>
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-card">Personal Training</div>
+            <div class="service-card">Group Classes</div>
+            <div class="service-card">Nutrition Plans</div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to helping you achieve your fitness goals.</p>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

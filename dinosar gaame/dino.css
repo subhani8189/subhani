@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+#dino {
+    position: absolute;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #555;
+}
+
+#cactus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 40px;
+    background-color: #000;
+    animation: moveCactus 2s linear infinite;
+}
+
+@keyframes moveCactus {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
